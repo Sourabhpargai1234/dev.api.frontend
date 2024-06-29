@@ -1,18 +1,16 @@
 {
-    "version": 2,
-    "routes": [
+    "rewrites": [
       {
-        "src": "/api/github",
-        "dest": "/server.js"
+        "source": "/api/github/(.*)",
+        "destination": "https://dev-api-two.vercel.app/"
       },
       {
-        "src": "/api/github/topic",
-        "dest": "/server.js"
+        "source": "/api/github",
+        "destination": "https://dev-api-two.vercel.app/"
       },
       {
-        "src": "/(.*)",
-        "dest": "/server.js"
+        "source": "/(.*)",
+        "destination": "/index.html"
       }
     ]
   }
-  
