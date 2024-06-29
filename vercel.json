@@ -2,7 +2,7 @@
     "rewrites": [
       {
         "source": "/api/github/(.*)",
-        "destination": "https://dev-api-two.vercel.app/"
+        "destination": "https://dev-api-two.vercel.app/$1"
       },
       {
         "source": "/api/github",
@@ -14,3 +14,4 @@
       }
     ]
   }
+  
