@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css'; // Import your CSS for global styles (adjust path as necessary)
 
-const API_BASE_URL = 'https://dev-api-two.vercel.app/'; // Replace with your Vercel app URL
+const API_BASE_URL = 'https://dev-api-two.vercel.app'; // Replace with your Vercel app URL
 
 function App() {
   const [repos, setRepos] = useState([]);
