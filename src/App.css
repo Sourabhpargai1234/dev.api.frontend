@@ -1,0 +1,13 @@
+/* styles.css */
+
+/* Light mode styles */
+.container {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark mode styles */
+.dark-mode .container {
+  background-color: #1a202c;
+  color: #ffffff;
+}

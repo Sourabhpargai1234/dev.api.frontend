@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/api/github",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/api/github/topic",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/server.js"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api/(github|github/topic)",
+        "destination": "https://dev-api-two.vercel.app/:1",
+        "headers": {
+          "Access-Control-Allow-Origin": "*"
+        }
+      }
+    ]
+  }
+  
