@@ -44,7 +44,7 @@ function App() {
   };
 
   return (
-    <div className={`container mx-auto p-4 ${isDarkMode ? 'dark-mode' : ''}`}>
+    <div className={`w-full h-full min-h-screen p-4 ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="flex justify-end mb-2">
         <button
           className="px-4 py-2 rounded-md mr-2 bg-blue-500 text-white hover:bg-blue-600"

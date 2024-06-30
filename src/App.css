@@ -1,13 +1,15 @@
-/* styles.css */
-
-/* Light mode styles */
-.container {
-  background-color: #ffffff;
-  color: #333333;
+.light {
+  background-color: #fff;
+  color: #000;
 }
 
-/* Dark mode styles */
-.dark-mode .container {
-  background-color: #1a202c;
-  color: #ffffff;
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  padding: 50px;
+  font-size: 16px;
+  cursor: pointer;
 }
