@@ -56,7 +56,7 @@ function App() {
       <h1 className="text-3xl font-bold mb-4">GitHub Repositories</h1>
       <div className="flex mb-4">
         <input
-          className="border border-gray-300 rounded-l px-4 py-2 w-full dark:bg-gray-800 dark:text-white"
+          className="border border-gray-300 rounded-l px-4 py-2 w-full dark:bg-gray-800"
           type="text"
           placeholder="Enter topic..."
           value={topic}
