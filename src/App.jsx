@@ -73,7 +73,7 @@ function App() {
         {repos.map(repo => (
           <div
             key={repo.repository_name}
-            className="border border-gray-300 rounded-lg p-4 transition-transform transform hover:scale-105 bg-blue-400"
+            className="border border-gray-300 rounded-lg p-4 transition-transform transform hover:scale-105"
           >
             <h3 className="text-xl font-bold mb-2">{repo.repository_name}</h3>
             <p className="text-sm text-gray-600 mb-2">Author: {repo.author}</p>
