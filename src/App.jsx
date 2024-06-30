@@ -81,8 +81,8 @@ function App() {
             <p className="text-sm mb-2">{repo.description}</p>
             <p><a href={repo.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">View Repo</a></p>
             <div className="flex items-center mt-2">
-              <img
-                src={repo.owner_avatar}
+            <img
+                src={repo.avatar_url}
                 alt={`${repo.author}'s avatar`}
                 className="rounded-full w-8 h-8 mr-2"
               />
