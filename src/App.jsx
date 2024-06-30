@@ -80,7 +80,7 @@ function App() {
       </div>
       {isLoading ? (
         <div className="flex justify-center items-center h-64">
-          <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-24 w-24">Loading...</div>
+          <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-24 w-24 flex justify-center items-center">Loading...</div>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
