@@ -40,7 +40,8 @@ function App() {
     fetchRepos();
   }, []); // Fetch repositories on initial load
 
-  const handleSearch = () => {
+  const handleSearch = (e) => {
+    e.preventDefault();
     if (topic.trim() !== '') {
       fetchTopicRepos();
     } else {
@@ -79,10 +80,11 @@ function App() {
         </button>
       </div>
       {isLoading ? (
-        <div className="flex justify-center items-center flex-col h-64">
+        <div className="flex items-center justify-center flex-col">
           <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-24 w-24"></div>
           <h2>Loading...</h2>
         </div>
+
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {repos.map(repo => (
