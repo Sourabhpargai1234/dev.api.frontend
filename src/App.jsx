@@ -10,7 +10,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(false); // State for loading indicator
   const [isDarkMode, setIsDarkMode] = useState(false); // State for dark mode
 
-  const fetchRepos = async () => {
+  const fetchRepos = async (e) => {
+    e.preventDefault();
     setIsLoading(true);
     try {
       const response = await axios.get(`${API_BASE_URL}/api/github`);
@@ -22,7 +23,8 @@ function App() {
     }
   };
 
-  const fetchTopicRepos = async () => {
+  const fetchTopicRepos = async (e) => {
+    e.preventDefault();
     setIsLoading(true);
     try {
       const response = await axios.get(`${API_BASE_URL}/api/github/topic`, {
